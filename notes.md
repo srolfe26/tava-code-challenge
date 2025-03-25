@@ -16,5 +16,4 @@
 - Spent a ridiculous amount of time trying to get docker and tsconfig to play nice with a common types folder, not going so well
 - Filtering by name should be an unbound filter
 - Would have liked to use SCSS or other to have a little more CSS control
-- Would have liked
-- Adding tests for backend service
+- Adding tests for backend service `cd backend && npm run test`
