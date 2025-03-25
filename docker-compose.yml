@@ -11,6 +11,7 @@ services:
     volumes:
       - ./frontend:/app
       - /app/node_modules
+      - ./backend/src/types:/app/backend/src/types
     depends_on:
       - backend
 
