@@ -12,7 +12,6 @@ export default function Employees() {
   const [statusFilter, setStatusFilter] = useState<string>("all");
   const location = useLocation();
 
-  // Update filters when URL changes
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     const nameParam = params.get('name') || '';
@@ -25,7 +24,6 @@ export default function Employees() {
     fetchEmployees();
   }, []);
 
-  // Update URL when filters change
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     if (searchTerm) {
@@ -40,7 +38,7 @@ export default function Employees() {
     }
     const newUrl = `${location.pathname}${params.toString() ? '?' + params.toString() : ''}`;
     window.history.replaceState({}, '', newUrl);
-  }, [searchTerm, statusFilter, location.pathname]);
+  }, [searchTerm, statusFilter, location.pathname, location.search]);
 
   const fetchEmployees = async () => {
     try {
@@ -108,15 +106,7 @@ export default function Employees() {
         </select>
       </div>
       {filteredEmployees.length === 0 ? (
-        <div
-          style={{
-            textAlign: "center",
-            padding: "40px",
-            backgroundColor: "#f5f5f5",
-            borderRadius: "8px",
-            margin: "20px 0",
-          }}
-        >
+        <div>
           <p className="no-employees-found">
             <span>No employees found matching your search.</span>
             <button

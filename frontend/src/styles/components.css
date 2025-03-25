@@ -122,6 +122,8 @@
 .no-employees-found {
   color: #777;
   font-style: italic;
+  text-align: center;
+  margin-top: 30vh;
 }
 
 .no-employees-found button.primary {
