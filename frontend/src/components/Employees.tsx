@@ -14,8 +14,8 @@ export default function Employees() {
 
   useEffect(() => {
     const params = new URLSearchParams(location.search);
-    const nameParam = params.get('name') || '';
-    const statusParam = params.get('status') || 'all';
+    const nameParam = params.get("name") || "";
+    const statusParam = params.get("status") || "all";
     setSearchTerm(nameParam);
     setStatusFilter(statusParam);
   }, [location.search]);
@@ -27,17 +27,19 @@ export default function Employees() {
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     if (searchTerm) {
-      params.set('name', searchTerm);
+      params.set("name", searchTerm);
     } else {
-      params.delete('name');
+      params.delete("name");
     }
-    if (statusFilter !== 'all') {
-      params.set('status', statusFilter);
+    if (statusFilter !== "all") {
+      params.set("status", statusFilter);
     } else {
-      params.delete('status');
+      params.delete("status");
     }
-    const newUrl = `${location.pathname}${params.toString() ? '?' + params.toString() : ''}`;
-    window.history.replaceState({}, '', newUrl);
+    const newUrl = `${location.pathname}${
+      params.toString() ? "?" + params.toString() : ""
+    }`;
+    window.history.replaceState({}, "", newUrl);
   }, [searchTerm, statusFilter, location.pathname, location.search]);
 
   const fetchEmployees = async () => {

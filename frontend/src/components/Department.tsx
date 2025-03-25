@@ -1,6 +1,6 @@
 // @ts-expect-error  - It works great in docker, but not in vscode
-import { Employee } from '../types/types';
-import EmployeeCard from './EmployeeCard';
+import { Employee } from "../types/types";
+import EmployeeCard from "./EmployeeCard";
 
 interface DepartmentProps {
   name: string;

@@ -13,12 +13,19 @@ export default function App() {
           <img src={logo} alt="logo" />
         </div>
         <div>
-          <NavLink to="/payroll" className={({ isActive }) => isActive ? "current-page" : ""}>
+          <NavLink
+            to="/payroll"
+            className={({ isActive }) => (isActive ? "current-page" : "")}
+          >
             Payroll
           </NavLink>
           <NavLink
             to="/employees"
-            className={({ isActive }) => isActive || window.location.pathname.startsWith('/employees/') ? "current-page" : ""}
+            className={({ isActive }) =>
+              isActive || window.location.pathname.startsWith("/employees/")
+                ? "current-page"
+                : ""
+            }
           >
             Employees
           </NavLink>

@@ -13,22 +13,27 @@ You may create a mock server, use GraphQL, or build a REST API. Time is of the e
 Build out the employee list and edit workflow as shown in the mockups using the API you created. Here’s a breakdown of the requirements:
 
 1. **List View**
+
    - The employees are in a flat array from the API, but they need to be grouped by department in the list view.
    - The yellow background color in the list mockup represents the hover state for each row.
    - No detail view is required; route directly to an edit view.
 
 2. **Edit View**
+
    - Implement an editable form for employee details based on the data structure.
 
 3. **Navigation**
+
    - Finish styling the navigation bar and add a routeable item for **Employees**.
 
 4. **Filtering**
+
    - Add a text input filter to search employees by name or other key fields.
    - Employees should remain grouped by department as the list filters.
    - If all employees in a department are filtered out, that department should be removed from the list view.
 
 5. **Styling**
+
    - Use the `src/styles.css` file to write raw CSS, or feel free to bring in a component library like Material UI to help with styling and layout if you prefer.
 
 6. **Type Definitions**
@@ -60,7 +65,6 @@ Impress the team by going above and beyond with these extras:
 - **Data Persistence**: Store data persistently (e.g., local storage or in-memory database).
 
 - **Error Handling and User Feedback**: Implement user-friendly error messages and loading states.
-
 
 - **Advanced Filtering**: Allow filtering by multiple fields like department or status.
 

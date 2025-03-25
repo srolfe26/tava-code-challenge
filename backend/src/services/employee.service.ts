@@ -1,7 +1,12 @@
-import { Injectable } from '@nestjs/common';
-import { Employee } from '../types/types';
-import { ApiResponse, GetEmployeeResponse, GetEmployeeListResponse, UpdateEmployeeResponse } from '../types/crud';
-import { data as initialData } from '../data';
+import { Injectable } from "@nestjs/common";
+import { Employee } from "../types/types";
+import {
+  ApiResponse,
+  GetEmployeeResponse,
+  GetEmployeeListResponse,
+  UpdateEmployeeResponse,
+} from "../types/crud";
+import { data as initialData } from "../data";
 
 @Injectable()
 export class EmployeeService {
@@ -18,11 +23,11 @@ export class EmployeeService {
   }
 
   async findOne(id: number): Promise<GetEmployeeResponse> {
-    const employee = this.employees.find(emp => emp.id === id);
+    const employee = this.employees.find((emp) => emp.id === id);
     if (!employee) {
       return {
         data: null,
-        error: 'Employee not found',
+        error: "Employee not found",
       };
     }
     return {
@@ -30,12 +35,15 @@ export class EmployeeService {
     };
   }
 
-  async update(id: number, updateData: Partial<Employee>): Promise<UpdateEmployeeResponse> {
-    const index = this.employees.findIndex(emp => emp.id === id);
+  async update(
+    id: number,
+    updateData: Partial<Employee>
+  ): Promise<UpdateEmployeeResponse> {
+    const index = this.employees.findIndex((emp) => emp.id === id);
     if (index === -1) {
       return {
         data: null,
-        error: 'Employee not found',
+        error: "Employee not found",
       };
     }
 
@@ -51,17 +59,17 @@ export class EmployeeService {
   }
 
   async delete(id: number): Promise<ApiResponse<boolean>> {
-    const index = this.employees.findIndex(emp => emp.id === id);
+    const index = this.employees.findIndex((emp) => emp.id === id);
     if (index === -1) {
       return {
         data: false,
-        error: 'Employee not found',
+        error: "Employee not found",
       };
     }
 
     this.employees[index] = {
       ...this.employees[index],
-      status: 'inactive',
+      status: "inactive",
     };
 
     return {

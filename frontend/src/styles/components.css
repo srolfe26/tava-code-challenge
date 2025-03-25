@@ -25,7 +25,8 @@
   border-bottom: 1px solid #333;
 }
 
-.employee-list-header-item, .employee-card-row {
+.employee-list-header-item,
+.employee-card-row {
   display: flex;
   align-items: center;
   padding-left: 8px;
@@ -38,7 +39,7 @@
 }
 
 .employee-card-row:hover {
-  background-color: #FFFE99;
+  background-color: #fffe99;
 }
 
 .col-20 {
@@ -112,11 +113,11 @@
 }
 
 .status-badge.active {
-  background: #4BBF73;
+  background: #4bbf73;
 }
 
 .status-badge.inactive {
-  background: #E5A54B;
+  background: #e5a54b;
 }
 
 .no-employees-found {
