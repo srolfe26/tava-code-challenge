@@ -15,3 +15,4 @@
  - Filtering by name should be an unbound filter
  - Would have liked to use SCSS or other to have a little more CSS control
  - Would have liked
+ - Adding tests for backend service

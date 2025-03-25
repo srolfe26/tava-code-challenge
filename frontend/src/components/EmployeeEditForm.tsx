@@ -125,7 +125,7 @@ export default function EmployeeEditForm() {
         />
       </div>
       <div className="form-actions">
-        <button type="submit">Save Changes</button>
+        <button className="primary" type="submit">Save Changes</button>
         <button type="button" onClick={() => navigate('/employees')}>Cancel</button>
       </div>
     </form>
