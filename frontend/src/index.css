@@ -65,3 +65,10 @@ main {
   height: 100%;
   flex: 1;
 }
+
+h1 {
+  font-size: 2rem;
+  color: #374343;
+  margin-left: 2rem;
+}
+
