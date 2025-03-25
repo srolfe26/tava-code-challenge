@@ -10,5 +10,5 @@
  - Will add docker compose file to make it all run
 
 2025-03-25
- - Yep. Let's re-roll the frontend with Vite. Why? There's not a lot there and it'll be a better foundation
-
+ - Yep. Let's re-roll the frontend with Vite. Why? There's not a lot existing and it'll be a better foundation
+ -
