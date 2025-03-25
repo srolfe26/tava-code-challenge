@@ -12,4 +12,4 @@
 2025-03-25
  - Yep. Let's re-roll the frontend with Vite. Why? There's not a lot existing and it'll be a better foundation
  - Spent a ridiculous amount of time trying to get docker and tsconfig to play nice with a common types folder, not going so well
- -
+ - Filtering by name should be an unbound filter
