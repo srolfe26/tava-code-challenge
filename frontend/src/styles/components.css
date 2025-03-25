@@ -1,0 +1,142 @@
+.employees-page {
+  padding: 2rem;
+}
+
+.department {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.department h2 {
+  color: #333;
+  font-size: 1.5rem;
+  margin: 0 0 1rem 0;
+}
+
+.employee-list-header {
+  display: flex;
+  color: #999;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #333;
+}
+
+.employee-list-header-item, .employee-card-row {
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+}
+
+.employee-card-row {
+  width: 100%;
+  transition: background-color 0.2s ease;
+}
+
+.employee-card-row:hover {
+  background-color: #FFFE99;
+}
+
+.col-20 {
+  flex: 0 0 25%;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+}
+
+.col-15 {
+  flex: 0 0 10%;
+}
+
+.col-flex {
+  flex: 1 1 auto;
+}
+
+.employee-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.employee-card-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.employee-card.inactive {
+  background: #fff8e1;
+}
+
+.employee-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.employee-card-row-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.employee-card-row-item-name {
+  font-size: 1rem;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.overflow-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.employee-details h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.start-date {
+  font-size: 0.875rem;
+  color: #666;
+  margin-top: 0.25rem;
+}
+
+.quote {
+  font-size: 0.875rem;
+  color: #444;
+  margin-top: 0.25rem;
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+.status-badge.active {
+  background: #4BBF73;
+}
+
+.status-badge.inactive {
+  background: #E5A54B;
+}

@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes, NavLink } from "react-router-dom";
 import Payroll from "./Payroll";
 import Employees from "./Employees";
 import logo from "../assets/logo.png";
+import "../styles/components.css";
 
 export default function App() {
   return (
